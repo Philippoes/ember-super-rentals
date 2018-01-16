@@ -1,6 +1,6 @@
 {{#each rentals as |rental|}}
   <article class="listing">
-    <a class="image {{if isWide "wide"}}">
+    <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
     <img src="{{rental.image}}" alt="">
     <small>View Larger</small>
   </a>
